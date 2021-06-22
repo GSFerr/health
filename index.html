@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      <title>Viva Saudável</title>
+      <link rel="stylesheet" href="style.css">
+      <!--<link rel="stylesheet" href="scripts.js">-->
+  </head>
+  <body>
+      <!--START HEADER SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" id="logo" href="#">La Vitta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="home" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#about-us">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#produto">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#testimonial">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#fotter">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section>
+          <div class="bg"></div>
+            <div class="content">
+              <div class="textBox">
+                  <h2>Saúde Todo Dia</h2>
+                  <p>Quer mais energia e disposição para curtir seus melhores momentos? Então você precisa aproveitar os benefícios
+                    de uma alimentação saudável rica em nutrientes e proteínas que só as frutas, legumes e hortaliças 
+                    podem oferecer. Comece agora mesmo seu projeto de alimentação com saúde e viva <strong>LA VITTA</strong> com mais qualidade.
+                  </p>
+                  <a href="#">Comece Agora!!</a>
+              </div>
+              <div class="imgBox">
+                  <img src="./assets/apple.png" class="fruits">
+              </div>
+          </div>
+          <ul class="thumb">
+              <li data-text="Alegria" class="active"><img src="./assets/apple.png" onclick="imgSlider('./assets/apple.png');changeBgColor
+                  ('#fc4a55')"></li>
+              <li data-text="Sabor"><img src="./assets/mango.png" onclick="imgSlider('./assets/mango.png');changeBgColor('#ffcc02')"></li>
+              <li data-text="Amizade"><img src="./assets/watermelon.png" onclick="imgSlider('./assets/watermelon.png');changeBgColor('#92ba3c')"></li>
+              <li data-text="Diversão"><img src="./assets/dragonFruits.png" onclick="imgSlider('./assets/dragonFruits.png');changeBgColor('#fb6cb2')"></li>
+              <li data-text="Astral +"><img src="./assets/pineApple.png" onclick="imgSlider('./assets/pineApple.png');changeBgColor('#ffb42b')"></li>
+          </ul>
+          <ul class="sci">
+              <li><a href="#"><img src="./assets/facebook.png"></a></li>
+              <li><a href="#"><img src="./assets/twitter.png"></a></li>
+              <li><a href="#"><img src="./assets/instagram.png"></a></li>
+          </ul>
+      </section>
+    
+      <section id="about-us">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <img src="./assets/fruits2.jpg" alt="About Us" class="img-fluid" />
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="textBox">
+                  <h2>La Vitta</h2>
+                  <p>A família La Vitta sabe o quanto é importante para você e sua família sentirem-se bem e dispostos para
+                      as alegrias e desafios do dia a dia, por isso há mais de 20 anos nosso compromisso é o de oferecer
+                      alimentos saudáveis, nutritivos e frescos, dos melhores produtores direto para sua mesa. Sentimos
+                      orgulho em poder fazer parte da sua história, essa é nossa maior recompensa.
+                  </p>
+                  <a href="#">Saiba Mais!!</a>
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          <!-- START PRODUCTS SECTION-->
+        
+      <div class="container" id="produto">
+        <h1>FAÇA A FEIRA</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay">
+                  </div>
+                    <img class="content-image" src="./assets/apple.png" />
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Fonte de Fibras</h3>
+                        <p>Consumir maçã ajuda a ter uma vida equilibrada e longe de doenças. 
+                          Tanto a polpa quanto a casca são ricas em vitaminas C, sais minerais como 
+                          cálcio, fósforo e potássio, além de fibras e um poderoso antioxidante, 
+                          a quercetina.
+                        </p>
+                        <button type="button" class="btn btn-light">EU QUERO!!</button>           
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay" id="overlay1"></div>
+                  <img class="content-image" src="./assets/dragonFruits.png">
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Anti Oxidante</h3>
+                      <p class="content-text">Um dos benefícios da pitaya é ajudar a emagrecer, por ser uma fruta pobre em calorias e
+                        rica em fibras, mas ela também tem outros benefícios, protege as células, ajuda na digestão, na pressão e
+                        combate a anemia porque é rica em vitaminas e minerais.</p>
+                      <button type="button" class="btn btn-light">EU QUERO!!</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="./assets/mango.png">
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Poder Anti inflamatório</h3>
+                      <p class="content-text">A manga é uma fruta que possui muitos nutrientes como vitaminas A e C, magnésio, 
+                        potássio, polifenóis como mangiferina, canferol e ácido benzoico, fibras. Além disso, a manga ajuda a 
+                        combater inflamações, fortalecer o sistema imunológico e reduzir o risco de doenças cardiovasculares</p>
+                      <button type="button" class="btn btn-light">EU QUERO!!</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="./assets/watermelon.png">
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Imunidade e hidratação</h3>
+                        <p class="content-text"> A melância é considerada uma das frutas mais completas. Rica em 
+                          vitaminas e minerais, contribui para a geração de energia do corpo, hidratação e aumenta a 
+                          imunidade. Além disso, é capaz de prevenir diversas doenças - entre elas, diabetes, infecção 
+                          urinária e variados tipos de câncer.
+                        </p>
+                        <button type="button" class="btn btn-light">EU QUERO!!</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="./assets/pineApple.png">
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Pós treino natural</h3>
+                        <p class="content-text">Praticar exercícios pode danificar o tecido muscular e causar inflamação.
+                          Os músculos afetados podem diminuir e ficar doloridos por vários dias. Mas, a bromelina, 
+                          presente no abacaxi, acelera a recuperação dos danos causados pelo exercício extenuante, 
+                          reduzindo a inflamação ao redor do tecido muscular lesado.
+                        </p>
+                        <button type="button" class="btn btn-light">EU QUERO!!</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="content" id="teste">
+                <a href="#">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="./assets/goiaba.png">
+                    <div class="content-details fadeIn-bottom">
+                      <h3 class="content-title">Anti Ácido</h3>
+                        <p class="content-text">A goiaba é uma fruta rica em fibras que estimulam os movimentos intestinais, 
+                          melhorando a digestão. Além disso, quando se ingere com casca, ajuda a combater a acidez do estômago, 
+                          sendo excelente para o tratamento de úlceras gástricas e duodenais.
+                        </p>
+                        <button type="button" class="btn btn-light">EU QUERO!!</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+          </ul>
+        </nav>
+
+
+  <!-- START TESTIMONIAL -->
+  <section id="testimonial">
+    <div class="container">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="carousel-caption">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt autem quaerat tempora
+                        esse odit, reiciendis vitae! Ea quasi, ipsum corrupti unde, distinctio dolor iure aspernatu
+                        quod tempore odio architecto natus. </p> <img src="./assets/miranda.jpg">
+                      <div id="image-caption">Miranda Priestly</div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="carousel-caption">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, natus est. Laborum qui
+                        dicta temporibus suscipit? Ex dolores labore corporis atque, odit, error laudantium debitis sapiente
+                        </p> <img src="./assets/yuri.jpg" class="img-fluid">
+                      <div id="image-caption">Yuri Orlov</div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="carousel-caption">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius, soluta aut ea beatae 
+                        sint deserunt quas. Quae facilis libero, cupiditate odit quo, in esse dolorem labore numquam, 
+                        molestias commodi.</p> <img src="./assets/neo.png" class="img-fluid">
+                      <div id="image-caption">Neo</div>
+                  </div>
+              </div>
+          </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- END TESTIMONIAL -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer font-small blue pt-4 " id="fotter" style="background-color: #92ba3c;">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">LA VITTA</h5>
+            <p>Rua UX Design, 2021 - Algum Lugar - Terra</p>
+    
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3">
+        
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!--<h2 class="text-uppercase" style="color: #fff;">Redes</h2>-->
+    
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3" style="color: #fff;">© 2021 Copyright:
+        <a href="https://mdbootstrap.com/" style="text-decoration: none; color: gray;"><a href="https://gsferr.github.io/portfolio/" /a> Gilson Ferreira</a>
+      </div>
+    </footer>
+
+      <!--END FOOTER SECTION-->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
